@@ -1,0 +1,15 @@
+<h1>Current Month Item wise Sales Details</h1>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="itemsdetails">
+  <thead>
+    <tr>
+      <th>Item Code</th>
+      <th>Sales Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let itemdetail of itemsdetails">
+      <td>{{ itemdetail.itemCode }}</td>
+      <td>{{ itemdetail.saleCount }}</td>
+    </tr>
+  </tbody>
+</table>
